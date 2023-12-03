@@ -23,7 +23,7 @@ app.register(cors, {
 })
 
 app.register(jwt, {
-  secret: 'spacetime',
+  secret: 'htsmk',
 })
 
 app.register(authRoutes)
