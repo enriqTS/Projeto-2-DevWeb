@@ -8,8 +8,8 @@ import {
 import { Hero } from '@/components/Hero'
 import { Profile } from '@/components/Profile'
 import { SignIn } from '@/components/SignIn'
-import { Copyright } from '@/components/Copyright'
 import { cookies } from 'next/headers'
+import { Footer } from '@/components/Footer'
 
 const roboto = Roboto({ subsets: ['latin'], variable: '--font-roboto' })
 
@@ -20,9 +20,9 @@ const baiJamjuree = BaiJamjuree({
 })
 
 export const metadata = {
-  title: 'NLW Spacetime',
+  title: 'Cápsula do Tempo',
   description:
-    'Uma cápsula do tempo construída com React, Next.js, TailwindCSS e Typescript.',
+    'Uma cápsula do tempo para colecionar momentos marcantes da sua jornada e compartilhar com o mundo. Construída com React, Next.js, TailwindCSS e Typescript.',
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {
@@ -44,7 +44,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 
             {isAuthenticated ? <Profile /> : <SignIn />}
             <Hero />
-            <Copyright />
+            <Footer />
           </div>
 
           {/* Right */}
